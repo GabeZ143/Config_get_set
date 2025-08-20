@@ -1,4 +1,16 @@
 {
+  "defaults": {
+    "get": {
+      "enabled": true,
+      "action": "get",
+      "requires_type": true
+    },
+    "set": {
+      "enabled": true,
+      "action": "set",
+      "requires_type": true
+    }
+  },
   "UpdateStatus": {
     "endpoint": "param.cgi",
     "get_params": [
@@ -22,7 +34,7 @@
   },
   "deviceInfo": {
     "endpoint": "param.cgi",
-    "get_params": ["None"],
+    "get_params": [],
     "set_params": []
   },
   "currentAlarmStatus": {
@@ -61,7 +73,7 @@
   },
   "deviceName": {
     "endpoint": "param.cgi",
-    "get_params": ["None"],
+    "get_params": [],
     "set_params": [
       "deviceName"
     ]
@@ -970,7 +982,7 @@
   },
   "SMTP": {
     "endpoint": "param.cgi",
-    "get_params": ["None"],
+    "get_params": [],
     "set_params": [
       "SMTPPassword",
       "SMTPUserName",
@@ -3251,6 +3263,10 @@
   "endpoint": "ptz.cgi",
   "get_params": [],
   "set_params": ["cameraID"],
-  "notes": "Set the north position of the PTZ. Example: /cgi-bin/ptz.cgi?action=setNorthPosition&cameraID=1"
+  "notes": "Set the north position of the PTZ. Example: /cgi-bin/ptz.cgi?action=setNorthPosition&cameraID=1",
+  "modes": {
+    "get": { "enabled": false },
+    "set": { "enabled": true, "action": "setNorthPosition", "requires_type": false }
+  }
 }
 }
