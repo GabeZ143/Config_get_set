@@ -1,0 +1,3255 @@
+{
+  "UpdateStatus": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "FlashSpace"
+    ],
+    "set_params": [
+      "FlashSpace",
+      "channel_id",
+      "channel_num"
+    ]
+  },
+  "UpdateData": {
+    "endpoint": "upgrade.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "UpdateOver": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "deviceInfo": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "currentAlarmStatus": {
+    "endpoint": "alarm.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "ptzCap": {
+    "endpoint": "ptz.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": []
+  },
+  "Wiper": {
+    "endpoint": "ptz.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "WiperParam": {
+    "endpoint": "ptz.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "IntervalTime",
+      "Sensitivity",
+      "WipeMode",
+      "cameraID"
+    ]
+  },
+  "W": {
+    "endpoint": "ptz.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  // "deviceName": {
+  //   "endpoint": "param.cgi",
+  //   "get_params": [],
+  //   "set_params": [
+  //     "deviceName"
+  //   ]
+  // },
+  "localNetwork": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "IPProtoVer",
+      "netCardId"
+    ],
+    "set_params": [
+      "IPAddress",
+      "IPProtoVer",
+      "alternateDNS",
+      "mtu",
+      "netCardId",
+      "preferredDNS",
+      "subGetway",
+      "subNetmask"
+    ]
+  },
+  "ADSLNetwork": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "IPProtoVer"
+    ],
+    "set_params": []
+  },
+  // "devicePort": {
+  //   "endpoint": "param.cgi",
+  //   "get_params": [],
+  //   "set_params": [
+  //     "controlPort",
+  //     "httpPort",
+  //     "httpsPort",
+  //     "rtmpPort",
+  //     "rtspPort",
+  //     "sslPort"
+  //   ]
+  // },
+  "channelInfo": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "cameraInfo": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "cameraID",
+      "cameraName"
+    ]
+  },
+  // "dateTime": {
+  //   "endpoint": "param.cgi",
+  //   "get_params": [],
+  //   "set_params": [
+  //     "day",
+  //     "hour",
+  //     "minute",
+  //     "month",
+  //     "second",
+  //     "year"
+  //   ]
+  // },
+  "timeZoneAbility": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "languageId"
+    ],
+    "set_params": []
+  },
+  "timeZone": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "languageId"
+    ],
+    "set_params": [
+      "DSTOpenFlag",
+      "beginMonth",
+      "beginTime",
+      "beginWeekDays",
+      "beginWeekly",
+      "endMonth",
+      "endTime",
+      "endWeekDays",
+      "endWeekly",
+      "timeZone"
+    ]
+  },
+  "videoSystemAbility": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "videoSystem": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "cameraID",
+      "frequency",
+      "videoFormat"
+    ]
+  },
+  "OSDAbility": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "OSD": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "TwelveHoursFlag",
+      "WeekFlag",
+      "alpha",
+      "blue",
+      "cameraID",
+      "fontColor",
+      "frontHeigth",
+      "frontWidth",
+      "green",
+      "inverseFlag",
+      "red"
+    ]
+  },
+  "OSDCanvas": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID",
+      "canvasID"
+    ],
+    "set_params": [
+      "OSDCanvasBegin",
+      "OSDCanvasEnd",
+      "OSDEnableFlag",
+      "OSDInfoAction",
+      "OSDInfoBegin",
+      "OSDInfoEnd",
+      "OSDType",
+      "alignMode",
+      "arrowID",
+      "cameraID",
+      "canvasID",
+      "fontSize",
+      "info",
+      "next_OSDCanvasURL",
+      "topX",
+      "topY"
+    ]
+  },
+  "OSDInfo": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "OSDInfoID",
+      "cameraID",
+      "osdinfoID"
+    ],
+    "set_params": [
+      "Customstr",
+      "OSDInfoID",
+      "Open",
+      "Type",
+      "X",
+      "Y",
+      "cameraID"
+    ]
+  },
+  "audioAbility": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": []
+  },
+  "microphone": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "cameraID",
+      "toneArmEnableFlag",
+      "toneArmType",
+      "volume"
+    ]
+  },
+  "AudioOutputParam": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "audioOutputEnable",
+      "audioOutputType",
+      "audioOutputVolume"
+    ]
+  },
+  "voiceDenoise": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "tonable"
+    ]
+  },
+  "IPDomePTZID": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "cameraID",
+      "domePTZId"
+    ]
+  },
+  "PTZTimer": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "cameraID",
+      "day",
+      "enableFlag",
+      "hour",
+      "minute",
+      "mode",
+      "month",
+      "operatorType",
+      "operatorValue",
+      "second",
+      "timeSegmentBegin",
+      "timeSegmentEnd",
+      "timerAction",
+      "timerBegin",
+      "timerEnd",
+      "year"
+    ]
+  },
+  "faceDetectParam": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "confidenceCoefficient",
+      "detectAreaBegin",
+      "detectAreaEnd",
+      "displayTraceInfo",
+      "endTime1",
+      "endTime2",
+      "endTime3",
+      "faceDetectEnable",
+      "ftpUploadImageMat",
+      "ftpUploadWholeImage",
+      "fullBodyEnable",
+      "imageMatQuality",
+      "nextDetectArea",
+      "next_weekDayURL",
+      "pointX1",
+      "pointX2",
+      "pointX3",
+      "pointY1",
+      "pointY2",
+      "pointY3",
+      "smallestPixel",
+      "snapshotMode",
+      "startTime1",
+      "startTime2",
+      "startTime3",
+      "tiltDegree",
+      "upBodyEnable",
+      "uploadInterval",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayEnd",
+      "yawDegree"
+    ]
+  },
+  "SystemParam": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "language",
+      "webModel"
+    ]
+  },
+  "multiCameraAbility": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "multiCamera": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "ButtingDistance",
+      "MultiCameraMode"
+    ]
+  },
+  "WhiteLedManualControl": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "WhiteLedManualDuration",
+      "WhiteLedManualMode",
+      "cameraID"
+    ]
+  },
+  "WhiteLedAlarmParam": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "WhiteDisplayMode",
+      "WhiteFlickerDuration",
+      "cameraID",
+      "endTime",
+      "next_weekDayURL",
+      "startTime",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayCount",
+      "weekDayEnd"
+    ]
+  },
+  "syncTime": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "syncTimeEnable",
+      "waitTime"
+    ]
+  },
+  "BasicSettings": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "systemName",
+      "systemOriginalScale",
+      "systemTemperatureUnit"
+    ]
+  },
+  "securityParam": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "accountsLockEnableFlag",
+      "errorCount",
+      "lockTime"
+    ]
+  },
+  // "AVStream": {
+  //   "endpoint": "param.cgi",
+  //   "get_params": [
+  //     "cameraID",
+  //     "streamID"
+  //   ],
+  //   "set_params": [
+  //     "cameraID",
+  //     "streamID",
+  //     "audioEncoderType",
+  //     "bitRate",
+  //     "bitRateType",
+  //     "cameraID",
+  //     "frameRate",
+  //     "iFrameInterval",
+  //     "quality",
+  //     "resolution",
+  //     "streamEncoderFlag",
+  //     "streamName",
+  //     "videoEncoderType"
+  //   ]
+  // },
+  "streamAbility": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": []
+  },
+  "snapshot": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID",
+      "streamID"
+    ],
+    "set_params": [
+      "SnapshotQuality",
+      "SnapshotResolution",
+      "cameraID",
+      "streamID"
+    ]
+  },
+  "ROIAblity": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "ROIAbility": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "ROI": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID",
+      "streamID"
+    ],
+    "set_params": [
+      "areaBegin",
+      "areaCount",
+      "areaEnd",
+      "areaID",
+      "areaName",
+      "cameraID",
+      "enable",
+      "height",
+      "level",
+      "next_areaURL",
+      "streamID",
+      "topX",
+      "topY",
+      "width"
+    ]
+  },
+  "SVCStreamAbility": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "StreamID",
+      "cameraID"
+    ],
+    "set_params": []
+  },
+  "SVCStream": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID",
+      "streamID"
+    ],
+    "set_params": [
+      "PFrameInterval",
+      "SVCStreamID",
+      "SVCStreamName",
+      "cameraID",
+      "sourceStreamID",
+      "streamID"
+    ]
+  },
+  "recordPolicy": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "AnrOpenFlag",
+      "AudioOpenFlag",
+      "DiskGroupId",
+      "PreRecordTime",
+      "RecordOpenFlag",
+      "SaveDays",
+      "StreamId",
+      "cameraID",
+      "endTime",
+      "endTime1",
+      "next_weekDayURL",
+      "recordType",
+      "scheduleTimeAction",
+      "startTime",
+      "startTime1",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayEnd",
+      "y"
+    ]
+  },
+  "recordDirInfo": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "diskId"
+    ],
+    "set_params": [
+      "diskId",
+      "diskName",
+      "enableFlag",
+      "groupID"
+    ]
+  },
+  "manualRecord": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "deviceDiskInfo": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "recordControl": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "RecordAudio",
+      "RecordMaxLimit",
+      "RecordStreamId"
+    ]
+  },
+  "Nas": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "alarmOut": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "alarmOutID"
+    ],
+    "set_params": [
+      "TimingEnable",
+      "alarmMode",
+      "alarmOutFrequency",
+      "alarmOutID",
+      "alarmOutName",
+      "alarmTime",
+      "alarmValidSignal",
+      "endTime",
+      "next_weekDayURL",
+      "startTime",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayCount",
+      "weekDayEnd"
+    ]
+  },
+  "alarmCenter": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "IPProtoVer"
+    ],
+    "set_params": [
+      "IPProtoVer",
+      "alarmCenterServerIP",
+      "alarmCenterServerPort"
+    ]
+  },
+  "motionAlarmAbility": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "motionAlarm": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "alarmFTP",
+      "alarmInterval",
+      "alarmOut",
+      "alarmRecord",
+      "alarmSMTP",
+      "alarmSound",
+      "alarmSoundType",
+      "cameraID",
+      "endTime",
+      "height",
+      "motionDetectStreamEnable",
+      "motionDetectionAction",
+      "motionDetectionAreaBegin",
+      "motionDetectionAreaCount",
+      "motionDetectionAreaEnd",
+      "motionDetectionEnableFlag",
+      "next_motionDetectionAreaURL",
+      "next_weekDayURL",
+      "sensitivity",
+      "startTime",
+      "topX",
+      "topY",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayCount",
+      "weekDayEnd",
+      "width"
+    ]
+  },
+  "IOalarmLinkage": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "alarmInID"
+    ],
+    "set_params": [
+      "ActionID",
+      "ActionType",
+      "AlarmLinkageBegin",
+      "AlarmLinkageEnd",
+      "EnableFlag",
+      "SourceName",
+      "ValidLevel",
+      "alarmInID",
+      "endTime1",
+      "endTime2",
+      "next_AlarmLinkageURL",
+      "next_weekDayURL",
+      "startTime1",
+      "startTime2",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayEnd",
+      "weekDayURL"
+    ]
+  },
+  // "diskAlarm": {
+  //   "endpoint": "param.cgi",
+  //   "get_params": [
+  //     "alarmInID"
+  //   ],
+  //   "set_params": [
+  //     "ActionID",
+  //     "ActionType",
+  //     "AlarmInterval",
+  //     "AlarmLinkageBegin",
+  //     "AlarmLinkageEnd",
+  //     "NoDiskAlarmEnableFlag",
+  //     "alarmInID",
+  //     "diskErrorAlarmCheckFlag",
+  //     "diskFullAlarmCheckFlag"
+  //   ]
+  // },
+  "exceptionAlarm": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "ActionID",
+      "ActionType",
+      "AlarmLinkageBegin",
+      "AlarmLinkageEnd",
+      "channelId",
+      "exAlarmEnableFlag",
+      "exAlarmInterval",
+      "excTypeDisK",
+      "excTypeIPConfict",
+      "excTypeNetworkDisconnect",
+      "next_AlarmLinkageURL"
+    ]
+  },
+  "ledOutput": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "cameraID",
+      "channelId",
+      "endTime",
+      "ledAlarmTime",
+      "next_weekDayURL",
+      "startTime",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayEnd"
+    ]
+  },
+  "cameraIO": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "ActionID",
+      "ActionType",
+      "AlarmLinkageBegin",
+      "AlarmLinkageCount",
+      "AlarmLinkageEnd",
+      "AlarmLinkageParam",
+      "cameraID",
+      "cameraIOEnableFlag",
+      "channelId",
+      "endTime",
+      "next_AlarmLinkageURL",
+      "next_weekDayURL",
+      "startTime",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayEnd"
+    ]
+  },
+  "shelterConfig": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "channelId"
+    ],
+    "set_params": [
+      "ActionID",
+      "ActionType",
+      "AlarmLinkageBegin",
+      "AlarmLinkageEnd",
+      "channelId",
+      "enableFlag",
+      "endTime",
+      "next_AlarmLinkageURL",
+      "next_weekDayURL",
+      "startTime",
+      "triggerChannel",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayEnd"
+    ]
+  },
+  "videoLoss": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "ActionID",
+      "ActionType",
+      "AlarmLinkageBegin",
+      "AlarmLinkageCount",
+      "AlarmLinkageEnd",
+      "AlarmLinkageParam",
+      "cameraID",
+      "channelId",
+      "endTime",
+      "next_AlarmLinkageURL",
+      "next_weekDayURL",
+      "scheduleTimeAction",
+      "startTime",
+      "videoLossEnableFlag",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayEnd"
+    ]
+  },
+  "dayNightAlarm": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "alarmFTP",
+      "alarmOut",
+      "alarmOut2",
+      "alarmRecord",
+      "alarmSMTP",
+      "cameraID",
+      "dayNightAlarmEnableFlag",
+      "endTime",
+      "next_weekDayURL",
+      "startTime",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayCount",
+      "weekDayEnd"
+    ]
+  },
+  "blindAreaAbility": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "blindArea": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "BlindAreaName",
+      "BlindAreaParamBegin",
+      "BlindAreaParamCount",
+      "BlindAreaParamEnd",
+      "areaID",
+      "areaParamAction",
+      "blindType",
+      "cameraID",
+      "enableFlag",
+      "height",
+      "next_areaParamURL",
+      "topX",
+      "topY",
+      "width"
+    ]
+  },
+  "blindAre": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "audioAlarm": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "RL",
+      "audioAlarmBegin",
+      "audioAlarmCount",
+      "audioAlarmEnd",
+      "cameraID",
+      "cycle",
+      "endTime",
+      "fileId",
+      "next_AudioAlarmURL",
+      "next_weekDayURL",
+      "startTime",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayCount",
+      "weekDayEnd"
+    ]
+  },
+  "AudioAbnormal": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "ActionID",
+      "ActionType",
+      "AlarmLinkageBegin",
+      "AlarmLinkageEnd",
+      "EnableFlag",
+      "alarmInID",
+      "dropSensitivity",
+      "dropThreshold",
+      "endTime1",
+      "endTime2",
+      "me2",
+      "next_AlarmLinkageURL",
+      "next_weekDayURL",
+      "riseSensitivity",
+      "riseThreshold",
+      "startTime1",
+      "suddenDropEnable",
+      "tonable",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayEnd"
+    ]
+  },
+  "networkAbnormalAlarm": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "ActionID",
+      "ActionType",
+      "AlarmLinkageBegin",
+      "AlarmLinkageCount",
+      "AlarmLinkageEnd",
+      "alarmInterval",
+      "networkAlarmEnable",
+      "networkCardId"
+    ]
+  },
+  "messagePush": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "messagePushEnable"
+    ]
+  },
+  "ptzDeviceAbility": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "PTZ": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "PTZBegin",
+      "PTZDeviceID",
+      "PTZEnableFlag",
+      "PTZEnd",
+      "PTZProtocol",
+      "baudRate",
+      "cameraID",
+      "comID",
+      "dataBits",
+      "enableFlag",
+      "interfaceType",
+      "parity",
+      "stopBits"
+    ]
+  },
+  "SMTPTest": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "SMTPPassword",
+      "SMTPUserName",
+      "recipientEmailAddress1",
+      "senderEmailAddress",
+      "serverAddr",
+      "serverPort",
+      "transportMode"
+    ],
+    "set_params": []
+  },
+  // "SMTP": {
+  //   "endpoint": "param.cgi",
+  //   "get_params": [],
+  //   "set_params": [
+  //     "SMTPPassword",
+  //     "SMTPUserName",
+  //     "anonymousSendEnable",
+  //     "attachmentImageQuality",
+  //     "recipientEmailAddress1",
+  //     "recipientEmailAddress2",
+  //     "recipientEmailAddress3",
+  //     "recipientEmailAddress4",
+  //     "recipientEmailAddress5",
+  //     "sendInterval",
+  //     "senderEmailAddress",
+  //     "serverAddr",
+  //     "serverPort",
+  //     "transportMode"
+  //   ]
+  // },
+  "NTP": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "IPProtoVer",
+      "NTPCheckTime",
+      "NTPIP",
+      "NTPPort",
+      "enableFlag"
+    ]
+  },
+  "DDNSAbility": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "DDNS": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "DDNSAccounts",
+      "DDNSNetworkCardName",
+      "DDNSPassword",
+      "domainName",
+      "providerID"
+    ],
+    "set_params": [
+      "DDNSAccounts",
+      "DDNSNetworkCardName",
+      "DDNSPassword",
+      "domainName",
+      "enableFlag",
+      "providerID"
+    ]
+  },
+  "PPPoE": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "PPPoEPassword",
+      "PPPoEUserName",
+      "enableFlag"
+    ]
+  },
+  "UPNP": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "enableFlag"
+    ]
+  },
+  "ieee8021X": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "account",
+      "eapMethod",
+      "ieee8021Password",
+      "ieee8021XEnable"
+    ]
+  },
+  "portMapping": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "clientPort",
+      "controlEnable",
+      "controlExternalPort",
+      "dataPort",
+      "httpEnable",
+      "httpExternalPort",
+      "httpPort",
+      "httpsEnable",
+      "httpsExternalPort",
+      "httpsPort",
+      "mapEnable",
+      "mapMethod",
+      "rtspEnable",
+      "rtspExternalPort",
+      "sslEnable",
+      "sslExternalPort"
+    ]
+  },
+  "FTPTest": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "account",
+      "ftpAddress",
+      "ftpPassword",
+      "ftpPath",
+      "ftpPort",
+      "ftpSecurityEnable"
+    ],
+    "set_params": []
+  },
+  "ftp": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "account",
+      "ftpAddress",
+      "ftpEnable",
+      "ftpPassword",
+      "ftpPath",
+      "ftpPort",
+      "ftpSecurityEnable",
+      "mediaType",
+      "recordTime"
+    ]
+  },
+  "ipFilter": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "blackListBegin",
+      "blackListCount",
+      "blackListEnd",
+      "blacklistBegin",
+      "blacklistCount",
+      "blacklistEnd",
+      "describe",
+      "endIp",
+      "ipFilterEnable",
+      "ipFilterParamAction",
+      "ipFilterType",
+      "next_BlackListURL",
+      "startIp",
+      "whiteListBegin",
+      "whiteListCount",
+      "whiteListEnd",
+      "whitelistBegin",
+      "whitelistCount",
+      "whitelistEnd"
+    ]
+  },
+  "SNMPSecurityLevelAbility": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "SNMP": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "SNMPPort",
+      "SNMPv1Enable",
+      "SNMPv2cEnable",
+      "SNMPv3Enable",
+      "readAuthAlgorithm",
+      "readAuthPassword",
+      "readCommunity",
+      "readEncryptAlgorithm",
+      "readEncryptPassword",
+      "readSecurityLevel",
+      "readSecurityName",
+      "trapAddress",
+      "trapCommunity",
+      "trapPort",
+      "writeAuthAlgorithm",
+      "writeAuthPassword",
+      "writeCommunity",
+      "writeEncryptAlgorithm1",
+      "writeEncryptPassword",
+      "writeSecurityLevel",
+      "writeSecurityName"
+    ]
+  },
+  "QOS": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "AVDscp",
+      "alarmDscp",
+      "ctrlDscp"
+    ]
+  },
+  "platformAccess": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "accessPassword",
+      "accessUsername",
+      "domainName",
+      "encryptionEnable",
+      "platformAccessEnable",
+      "port"
+    ]
+  },
+  "bonjourService": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "enable"
+    ]
+  },
+  "p2pStatus": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "p2pParam": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "UUID",
+      "enable"
+    ]
+  },
+  "QRCode": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "HTTPS": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "httpsEnable"
+    ]
+  },
+  "POE": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "autoPoe",
+      "geteway",
+      "ip",
+      "netmask"
+    ]
+  },
+  "natPort": {
+    "endpoint": "network.cgi",
+    "get_params": [],
+    "set_params": [
+      "natStartPort"
+    ]
+  },
+  "protocolInfo": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "protocolSecurity": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "protocolSecurityFlag"
+    ]
+  },
+  "cmsConfigure": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "IntelligentAnalysisSwitchEnable",
+      "Intelligent_Analysis",
+      "Media2",
+      "Media2Enable",
+      "Onvif",
+      "OnvifEnable",
+      "OnvifOnlyHttpsEnable",
+      "ProfileGEnable",
+      "Profile_G",
+      "StreamOnlyHttpsEnable",
+      "User_Verification",
+      "extendListBegin",
+      "extendListCount",
+      "extendListEnd",
+      "intelligentAnalysisEnable",
+      "media2Enable",
+      "next_extendListURL",
+      "onvifEnable",
+      "onvifOnlyHttpsEnable",
+      "profileGEnable",
+      "protocolEnable",
+      "protocolName",
+      "streamOnlyHttpsEnable",
+      "username"
+    ]
+  },
+  "multicastParameters": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "audioAddress",
+      "audioPort",
+      "channelBegin",
+      "channelCount",
+      "channelEnd",
+      "channelId",
+      "next_StreamURL",
+      "sourceAddress",
+      "sourcePort",
+      "streamBegin",
+      "streamCount",
+      "streamEnd",
+      "streamId",
+      "videoAddress",
+      "videoPort"
+    ]
+  },
+  "protocolManagement": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID",
+      "protocolID"
+    ],
+    "set_params": [
+      "protocolID",
+      "protocolMainPath",
+      "protocolMainPort",
+      "protocolMainStreamEnable",
+      "protocolName",
+      "protocolSubPath",
+      "protocolSubPort",
+      "protocolSubStreamEnable"
+    ]
+  },
+  "protocol": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "protocolID"
+    ]
+  },
+  "PlateSize": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "LprPlateNum": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "BeginIndex",
+      "EndIndex"
+    ],
+    "set_params": []
+  },
+  "LprLinkParam": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "BlackListOpen",
+      "BlackListSMTP",
+      "BlackListUpload",
+      "NoListOpen",
+      "NoListSMTP",
+      "NoListUpload",
+      "OSD",
+      "OSDDuration",
+      "OpenBarrierDuration",
+      "OpenLevel",
+      "SnapshotUpload",
+      "WhiteListOpen",
+      "WhiteListSMTP",
+      "WhiteListUpload"
+    ]
+  },
+  "LprConfigParam": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "Angle",
+      "Credibility",
+      "MinWidth",
+      "RoiHeight",
+      "RoiTopX",
+      "RoiTopY",
+      "RoiWith"
+    ]
+  },
+  "PlateInfo": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "LprListEvent": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "EnableFlag",
+      "ListType",
+      "alarmFTP",
+      "alarmOut",
+      "alarmOut2",
+      "alarmRecord",
+      "alarmSMTP",
+      "alarmSound",
+      "alarmSoundType",
+      "endTime",
+      "next_weekDayURL",
+      "startTime",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayCount",
+      "weekDayEnd"
+    ]
+  },
+  "smoke": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "alarmFTP",
+      "alarmOut",
+      "alarmRecord",
+      "alarmSMTP",
+      "alarmSound",
+      "alarmSoundType",
+      "cameraID",
+      "draw",
+      "enableFlag",
+      "endTime",
+      "next_pointURL",
+      "pointBegin",
+      "pointCount",
+      "pointEnd",
+      "pointX",
+      "pointY",
+      "regionBegin",
+      "regionCount",
+      "regionEnd",
+      "sensitivity",
+      "startTime",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayCount",
+      "weekDayEnd"
+    ]
+  },
+  "smallFireParamAbility": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "smallFireParam": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "alarmFTP",
+      "alarmLED",
+      "alarmOut",
+      "alarmOut2",
+      "alarmRecord",
+      "alarmSMTP",
+      "alarmSound",
+      "alarmSoundType",
+      "cameraID",
+      "enableFlag",
+      "endTime",
+      "height",
+      "motionDetectionAction",
+      "motionDetectionAreaBegin",
+      "motionDetectionAreaCount",
+      "motionDetectionAreaEnd",
+      "next_motionDetectionAreaURL",
+      "next_weekDayURL",
+      "regionBegin",
+      "regionCount",
+      "regionEnd",
+      "sensitivity",
+      "startTime",
+      "topX",
+      "topY",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayCount",
+      "weekDayEnd",
+      "width"
+    ]
+  },
+  "fireSmokeParamAbility": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": []
+  },
+  "fireSmokeParam": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "alarmFTP",
+      "alarmOut",
+      "alarmRecord",
+      "alarmSMTP",
+      "alarmSound",
+      "alarmSoundType",
+      "cameraID",
+      "draw",
+      "enableFlag",
+      "endTime",
+      "next_pointURL",
+      "pointBegin",
+      "pointCount",
+      "pointEnd",
+      "pointX",
+      "pointY",
+      "regionBegin",
+      "regionCount",
+      "regionEnd",
+      "sensitivity",
+      "startTime",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayCount",
+      "weekDayEnd"
+    ]
+  },
+  "getSupportIntelligences": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": []
+  },
+  "perimeterAbility": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": []
+  },
+  "perimeterParam": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "alarmFTP",
+      "alarmOut",
+      "alarmRecord",
+      "alarmSMTP",
+      "alarmSound",
+      "alarmSoundType",
+      "cameraID",
+      "clearArea",
+      "draw",
+      "enableFlag",
+      "endTime",
+      "maxTargetHeight",
+      "maxTargetWidth",
+      "minTargetHeight",
+      "minTargetWidth",
+      "next_pointURL",
+      "next_regionURL",
+      "next_weekDayURL",
+      "pointBegin",
+      "pointCount",
+      "pointEnd",
+      "pointX",
+      "pointY",
+      "regionBegin",
+      "regionCount",
+      "regionEnd",
+      "sensitivity",
+      "startTime",
+      "targetSizeEnableV2",
+      "targetType",
+      "targetTypeEnable",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayCount",
+      "weekDayEnd"
+    ]
+  },
+  "tripWireAbility": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "tripWireParam": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "alarmFTP",
+      "alarmOut",
+      "alarmRecord",
+      "alarmSMTP",
+      "alarmSound",
+      "alarmSoundType",
+      "cameraID",
+      "draw",
+      "enableFlag",
+      "endTime",
+      "lineCrossEndX",
+      "lineCrossEndY",
+      "lineCrossStartX",
+      "lineCrossStartY",
+      "next_regionURL",
+      "next_weekDayURL",
+      "regionBegin",
+      "regionCount",
+      "regionEnd",
+      "startTime",
+      "targetType",
+      "targetTypeEnable",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayCount",
+      "weekDayEnd"
+    ]
+  },
+  "multiTripWireAbility": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "multiTripWireParam": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "LineCross1",
+      "LineCross2",
+      "alarmFTP",
+      "alarmOut",
+      "alarmRecord",
+      "alarmSMTP",
+      "cameraID",
+      "enableFlag",
+      "endTime1",
+      "isGetDetail",
+      "lineCrossEndX",
+      "lineCrossEndX2",
+      "lineCrossEndY",
+      "lineCrossEndY2",
+      "lineCrossStartX",
+      "lineCrossStartX2",
+      "lineCrossStartY",
+      "lineCrossStartY2",
+      "maxTargetSize",
+      "minTargetSize",
+      "multiTripWireRegionParamBegin",
+      "multiTripWireRegionParamEnd",
+      "regionBegin",
+      "regionCount",
+      "regionEnd",
+      "startTime1",
+      "targetSizeConstrain",
+      "targetType",
+      "targetTypeConstrain",
+      "timeInterval",
+      "triggerDirection1",
+      "triggerDirection2",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayEnd"
+    ]
+  },
+  "LoiteringParam": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "Count",
+      "alarmFTP",
+      "alarmOut",
+      "alarmRecord",
+      "alarmSMTP",
+      "cameraID",
+      "draw",
+      "enableFlag",
+      "endTime",
+      "minLoiteringTime",
+      "next_pointURL",
+      "next_weekDayURL",
+      "pathAnalysis",
+      "pointBegin",
+      "pointEnd",
+      "pointX",
+      "pointY",
+      "regionBegin",
+      "regionCount",
+      "regionEnd",
+      "startTime",
+      "targetMaxSize",
+      "targetMinSize",
+      "targetSizeEnable",
+      "targetType",
+      "targetTypeEnable",
+      "uploadDetail",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayCount",
+      "weekDayEnd"
+    ]
+  },
+  "multiLoiteringAbility": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "multiLoiteringParam": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "alarmFTP",
+      "alarmOut",
+      "alarmRecord",
+      "alarmSMTP",
+      "alarmSound",
+      "alarmSoundType",
+      "cameraID",
+      "draw",
+      "enableFlag",
+      "endTime",
+      "forbiddenTypeEnable",
+      "maxNum",
+      "minLoiteringTime",
+      "minNum",
+      "next_pointURL",
+      "next_regionURL",
+      "next_weekDayURL",
+      "pointBegin",
+      "pointCount",
+      "pointEnd",
+      "pointX",
+      "pointY",
+      "regionBegin",
+      "regionCount",
+      "regionEnd",
+      "startTime",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayCount",
+      "weekDayEnd"
+    ]
+  },
+  "objLeftParam": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "_pointURL",
+      "alarmFTP",
+      "alarmOut",
+      "alarmRecord",
+      "alarmSMTP",
+      "cameraID",
+      "draw",
+      "enableFlag",
+      "endTime",
+      "minLoiteringTime",
+      "next_pointURL",
+      "next_weekDayURL",
+      "pointBegin",
+      "pointCount",
+      "pointEnd",
+      "pointX",
+      "pointY",
+      "regionBegin",
+      "regionCount",
+      "regionEnd",
+      "startTime",
+      "targetMaxSize",
+      "targetMinSize",
+      "uploadDetail",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayCount",
+      "weekDayEnd"
+    ]
+  },
+  "objMovedParam": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "alarmFTP",
+      "alarmOut",
+      "alarmRecord",
+      "alarmSMTP",
+      "cameraID",
+      "draw",
+      "enableFlag",
+      "endTime",
+      "minMovedTime",
+      "next_pointURL",
+      "next_weekDayURL",
+      "pointBegin",
+      "pointCount",
+      "pointEnd",
+      "pointX",
+      "pointY",
+      "regionBegin",
+      "regionCount",
+      "regionEnd",
+      "startTime",
+      "targetMaxSize",
+      "targetMinSize",
+      "uploadDetail",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayCount",
+      "weekDayEnd"
+    ]
+  },
+  "abnormalSpeedParam": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "alarmFTP",
+      "alarmOut",
+      "alarmRecord",
+      "alarmSMTP",
+      "cameraID",
+      "draw",
+      "enableFlag",
+      "endTime",
+      "maxSpeed",
+      "minSpeed",
+      "next_pointURL",
+      "next_weekDayURL",
+      "ount",
+      "pointBegin",
+      "pointEnd",
+      "pointX",
+      "pointY",
+      "regionBegin",
+      "regionCount",
+      "regionEnd",
+      "startTime",
+      "targetMaxSize",
+      "targetMinSize",
+      "targetSizeEnable",
+      "targetType",
+      "targetTypeEnable",
+      "uploadDetail",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayCount",
+      "weekDayEnd"
+    ]
+  },
+  "converseAbility": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "converseParam": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "ConverseAngle",
+      "alarmFTP",
+      "alarmOut",
+      "alarmRecord",
+      "alarmSMTP",
+      "alarmSound",
+      "alarmSoundType",
+      "cameraID",
+      "draw",
+      "enableFlag",
+      "endTime",
+      "next_pointURL",
+      "next_regionURL",
+      "next_weekDayURL",
+      "pointBegin",
+      "pointCount",
+      "pointEnd",
+      "pointX",
+      "pointY",
+      "regionBegin",
+      "regionCount",
+      "regionEnd",
+      "startTime",
+      "targetMaxSize",
+      "targetMinSize",
+      "targetType",
+      "targetTypeEnable",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayCount",
+      "weekDayEnd"
+    ]
+  },
+  "noParkingParam": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "alarmFTP",
+      "alarmOut",
+      "alarmRecord",
+      "alarmSMTP",
+      "cameraID",
+      "draw",
+      "enableFlag",
+      "endTime",
+      "minLeftTime",
+      "next_pointURL",
+      "next_weekDayURL",
+      "pointBegin",
+      "pointCount",
+      "pointEnd",
+      "pointX",
+      "pointY",
+      "regionBegin",
+      "regionCount",
+      "regionEnd",
+      "startTime",
+      "targetMaxSize",
+      "targetMinSize",
+      "uploadDetail",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayCount",
+      "weekDayEnd"
+    ]
+  },
+  "signalBadParam": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "alarmFTP",
+      "alarmOut",
+      "alarmRecord",
+      "alarmSMTP",
+      "cameraID",
+      "enableFlag",
+      "endTime",
+      "next_weekDayURL",
+      "startTime",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayCount",
+      "weekDayEnd"
+    ]
+  },
+  "statisticAbility": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "getStatisticsCfg": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": []
+  },
+  "setStatisticsCfg": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "AlarmEnable",
+      "AlarmThreshold",
+      "ClearStatisticsInterval",
+      "CorrectionEnable",
+      "CorrectionValue",
+      "CustomClearTime",
+      "OSDEnable",
+      "RegionType",
+      "alarmFTP",
+      "alarmOut",
+      "alarmRecord",
+      "alarmSMTP",
+      "alarmSound",
+      "alarmSoundType",
+      "cameraID",
+      "enableFlag",
+      "endTime",
+      "lineCrossEndX",
+      "lineCrossEndY",
+      "lineCrossStartX",
+      "lineCrossStartY",
+      "next_weekDayURL",
+      "startTime",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayCount",
+      "weekDayEnd"
+    ]
+  },
+  "getStatistics": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": []
+  },
+  "statisticsInfo": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "QueryTimeDay",
+      "QueryTimeMon",
+      "QueryTimeYear",
+      "QueryType",
+      "cameraID"
+    ],
+    "set_params": []
+  },
+  "enterAreaAbility": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "enterAreaParam": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "alarmFTP",
+      "alarmOut",
+      "alarmRecord",
+      "alarmSMTP",
+      "alarmSound",
+      "alarmSoundType",
+      "cameraID",
+      "draw",
+      "enableFlag",
+      "endTime",
+      "next_pointURL",
+      "next_weekDayURL",
+      "pointBegin",
+      "pointCount",
+      "pointEnd",
+      "pointX",
+      "pointY",
+      "regionBegin",
+      "regionCount",
+      "regionEnd",
+      "sensitivity",
+      "startTime",
+      "targetMaxSize",
+      "targetMinSize",
+      "targetSizeEnable",
+      "targetType",
+      "targetTypeEnable",
+      "uploadDetail",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayCount",
+      "weekDayEnd"
+    ]
+  },
+  "leaveAreaAbility": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "leaveAreaParam": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "alarmFTP",
+      "alarmOut",
+      "alarmRecord",
+      "alarmSMTP",
+      "alarmSound",
+      "alarmSoundType",
+      "draw",
+      "enableFlag",
+      "endTime",
+      "next_pointURL",
+      "next_weekDayURL",
+      "pointBegin",
+      "pointCount",
+      "pointEnd",
+      "pointX",
+      "pointY",
+      "regionBegin",
+      "regionCount",
+      "regionEnd",
+      "sensitivity",
+      "startTime",
+      "targetMaxSize",
+      "targetMinSize",
+      "targetSizeEnable",
+      "targetType",
+      "targetTypeEnable",
+      "uploadDetail",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayCount",
+      "weekDayEnd"
+    ]
+  },
+  "smartMotionAbility": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "smartMotionParam": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "alarmFTP",
+      "alarmOut",
+      "alarmRecord",
+      "alarmSMTP",
+      "alarmSound",
+      "alarmSoundType",
+      "cameraID",
+      "draw",
+      "enableFlag",
+      "endTime",
+      "next_pointURL",
+      "next_regionURL",
+      "next_weekDayURL",
+      "pointBegin",
+      "pointCount",
+      "pointEnd",
+      "pointX",
+      "pointY",
+      "regionBegin",
+      "regionCount",
+      "regionEnd",
+      "sensitivity",
+      "startTime",
+      "targetType",
+      "targetTypeEnable",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayCount",
+      "weekDayEnd"
+    ]
+  },
+  "advanceAbility": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": []
+  },
+  "advanceParam": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "alarmInterval",
+      "cameraID",
+      "scene"
+    ]
+  },
+  "HeatMapParam": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "Enable",
+      "HeatMapAreaBase"
+    ]
+  },
+  "type": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "Enable",
+      "HeatMapAreaBase",
+      "HeatMapSaveMode"
+    ]
+  },
+  "fenceParam": {
+    "endpoint": "alarm.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "ActionID",
+      "ActionType",
+      "AlarmLinkageBegin",
+      "AlarmLinkageEnd",
+      "areaParamAction",
+      "cameraID",
+      "enableFlag",
+      "endTime",
+      "next_AlarmLinkageURL",
+      "next_pointURL",
+      "next_regionURL",
+      "next_weekDayURL",
+      "pointBegin",
+      "pointCount",
+      "pointEnd",
+      "pointX",
+      "pointY",
+      "regionBegin",
+      "regionCount",
+      "regionEnd",
+      "sensitivity",
+      "startTime",
+      "targetType",
+      "targetTypeEnable",
+      "triggerChannel",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayEnd"
+    ]
+  },
+  "safetyHatAbility": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "safetyHatParam": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "alarmFTP",
+      "alarmOut",
+      "alarmRecord",
+      "alarmSMTP",
+      "alarmSound",
+      "alarmSoundType",
+      "cameraID",
+      "draw",
+      "enableFlag",
+      "endTime",
+      "next_pointURL",
+      "next_weekDayURL",
+      "pointBegin",
+      "pointCount",
+      "pointEnd",
+      "pointX",
+      "pointY",
+      "regionBegin",
+      "regionCount",
+      "regionEnd",
+      "startTime",
+      "targetTypeEnable",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayCount",
+      "weekDayEnd"
+    ]
+  },
+  "safetyVestAbility": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "safetyVestParam": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "alarmFTP",
+      "alarmOut",
+      "alarmRecord",
+      "alarmSMTP",
+      "alarmSound",
+      "alarmSoundType",
+      "cameraID",
+      "draw",
+      "enableFlag",
+      "endTime",
+      "next_pointURL",
+      "next_weekDayURL",
+      "pointBegin",
+      "pointCount",
+      "pointEnd",
+      "pointX",
+      "pointY",
+      "regionBegin",
+      "regionCount",
+      "regionEnd",
+      "startTime",
+      "targetTypeEnable",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayCount",
+      "weekDayEnd"
+    ]
+  },
+  "FisheyeAbility": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "dewarpParam": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "cameraID",
+      "dewarpMode",
+      "videoMode"
+    ]
+  },
+  "mountParam": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "mountType"
+    ]
+  },
+  "videoLayout": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": []
+  },
+  "thermalAbility": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": []
+  },
+  "thermalMeasureMode": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "measureID",
+      "measureMode"
+    ]
+  },
+  "thermalImagerConfigureParam": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "AlarmDelay",
+      "AlarmInterval",
+      "AreaFeatureTemprShowMode",
+      "AutoMasking",
+      "DisplayMode",
+      "DrcMode",
+      "DrcModeTemperatureMax",
+      "DrcModeTemperatureMin",
+      "EnvironmentTemperature",
+      "FontSizeMode",
+      "IsDisplayAlarmArea",
+      "IsOpenTemperatureMeasure",
+      "MixStreamMode",
+      "Physicsinfo",
+      "PreventOverheatMode",
+      "RawUploadInterval",
+      "TemperatureMax",
+      "TemperatureMin",
+      "TemperatureUnit",
+      "ThermalMeasureMode",
+      "areaIdDisplayMode",
+      "cameraID",
+      "derEnable",
+      "lengthUnit",
+      "selfAdaptiveEnvironmentTemperature",
+      "tempConsumeMode"
+    ]
+  },
+  "environmentTemperature": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "cameraID",
+      "environmentTemperature"
+    ]
+  },
+  "temperAlarmParam": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "areaID",
+      "cameraID",
+      "measureID"
+    ],
+    "set_params": [
+      "PointX",
+      "PointY",
+      "SNPointCoordinateCount",
+      "SNPointCoordinateEnd",
+      "SNPointCoordinateNext",
+      "SNPointCoordinateStart",
+      "alarmFlag",
+      "alarmMaxValue",
+      "alarmType",
+      "alarmValue",
+      "areaFlag",
+      "areaId",
+      "areaName",
+      "areaShapeType",
+      "cameraID",
+      "emissivity",
+      "groupId",
+      "ignoreObjectMode",
+      "maskEnable",
+      "measureID",
+      "next_temperAlarmParamURL",
+      "reflectTempEnable",
+      "reflectTempValue",
+      "targetSpace",
+      "temperAlarmParamCount",
+      "temperAlarmParamEnd",
+      "temperAlarmParamStart",
+      "timeDuration",
+      "warningValue"
+    ]
+  },
+  "areaTemperature": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "areaID",
+      "cameraID"
+    ],
+    "set_params": []
+  },
+  "anyPointTemperature": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "PointX",
+      "PointY",
+      "cameraID"
+    ],
+    "set_params": []
+  },
+  "pointTemperature": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "Num",
+      "PointX",
+      "PointY",
+      "biginPointX",
+      "biginPointY",
+      "cameraID",
+      "endPointX",
+      "endPointY",
+      "horizontalNum",
+      "pointTemperatureBegin",
+      "pointTemperatureEnd",
+      "verticalNum"
+    ],
+    "set_params": []
+  },
+  "alarmDeploymentParam": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "ActionID",
+      "ActionType",
+      "AlarmLinkageBegin",
+      "AlarmLinkageCount",
+      "camearaID",
+      "next_AlarmLinkageURL",
+      "sourceType",
+      "temperAlarmDeploymentParamCount",
+      "temperAlarmDeploymentParamStart"
+    ]
+  },
+  "maskingArea": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "camearaID"
+    ],
+    "set_params": [
+      "1maskingEnable",
+      "alarmEnable",
+      "alarmType",
+      "alarmValue",
+      "areaEnable",
+      "areaId",
+      "areaMaskEnable",
+      "areaName",
+      "areaType",
+      "camearaID",
+      "distance",
+      "duration",
+      "filterTarget",
+      "groupId",
+      "next_pointURL",
+      "next_regionURL",
+      "pointBegin",
+      "pointCount",
+      "pointEnd",
+      "pointX",
+      "pointY",
+      "reflectionTempEnable",
+      "regionBegin",
+      "regionCount",
+      "regionEnd",
+      "showmaskingEnable",
+      "targetEmissivity",
+      "warningValue"
+    ]
+  },
+  "ledControlParam": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "Brightness",
+      "DisplayMode",
+      "FlickerInterval",
+      "ID",
+      "LedControlBegin",
+      "LedControlCount",
+      "LedControlEnd",
+      "artTime",
+      "cameraID",
+      "endTime",
+      "next_weekDayURL",
+      "startTime",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayCount",
+      "weekDayEnd"
+    ]
+  },
+  "AIThermalBadPointCalibration": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "AIThermalVersionInfo": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "AIThermalConfigureParam": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "AbnormalTemperatureFilter",
+      "AreaId",
+      "AreaPointBegin",
+      "AreaPointEnd",
+      "AveTemperatureCorrection",
+      "EnvironmentTemperature",
+      "FaceColorEnable",
+      "FaceEnable",
+      "FaceMaxPixelWidth",
+      "FaceMinPixelWidth",
+      "FtpUploadEnable",
+      "IsOpenTemperatureMeasure",
+      "LengthUnit",
+      "MeasureMode",
+      "NormalTemperatureMax",
+      "NormalTemperatureMin",
+      "Physicsinfo",
+      "PictureOSDEnable",
+      "PictureQuality",
+      "PitchDegree",
+      "Reliability",
+      "ShowAreaEnable",
+      "ShowObjectMode",
+      "SnapPictureMode",
+      "SnapPictureNum",
+      "TempAreaMode",
+      "TemperatureUnit",
+      "TiltDegree",
+      "YawDegree",
+      "nextPolygonAreaParam",
+      "pointX1",
+      "pointX2",
+      "pointX3",
+      "pointX4",
+      "pointY1",
+      "pointY2",
+      "pointY3",
+      "pointY4",
+      "polygonAreaParamBegin",
+      "polygonAreaParamEnd",
+      "toEnable"
+    ]
+  },
+  "AIThermal": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "AIThermalHighTemperatureAlarmLinkage": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "AlarmEnable",
+      "AlarmFTP",
+      "AlarmIO1",
+      "AlarmIO2",
+      "AlarmInterval",
+      "AlarmRecord",
+      "AlarmSMTP",
+      "AlarmSound",
+      "AreaAlarmParamBegin",
+      "AreaAlarmParamEnd",
+      "AreaId",
+      "AudioActionId",
+      "HighTemperatureAlarmParamBegin",
+      "HighTemperatureAlarmParamEnd",
+      "endTime1",
+      "nextAreaAlarmParam",
+      "next_weekDayURL",
+      "startTime1",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayEnd"
+    ]
+  },
+  "AIThermalNormalTemperatureAlarmLinkage": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "AlarmEnable",
+      "AlarmFTP",
+      "AlarmIO1",
+      "AlarmIO2",
+      "AlarmInterval",
+      "AlarmRecord",
+      "AlarmSMTP",
+      "AlarmSound",
+      "AreaAlarmParamBegin",
+      "AreaAlarmParamEnd",
+      "AreaId",
+      "AudioActionId",
+      "NormalTemperatureAlarmParamBegin",
+      "NormalTemperatureAlarmParamEnd",
+      "endTime1",
+      "nextAreaAlarmParam",
+      "next_weekDayURL",
+      "startTime1",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayEnd"
+    ]
+  },
+  "AIThermalLowTemperatureAlarmLinkage": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "AlarmEnable",
+      "AlarmFTP",
+      "AlarmIO1",
+      "AlarmIO2",
+      "AlarmInterval",
+      "AlarmRecord",
+      "AlarmSMTP",
+      "AlarmSound",
+      "AreaAlarmParamBegin",
+      "AreaAlarmParamEnd",
+      "AreaId",
+      "AudioActionId",
+      "LowTemperatureAlarmParamBegin",
+      "LowTemperatureAlarmParamEnd",
+      "endTime1",
+      "nextAreaAlarmParam",
+      "next_weekDayURL",
+      "startTime1",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayEnd"
+    ]
+  },
+  "AIThermalMapping": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "DstPointList",
+      "RegionDstBegin",
+      "RegionDstEnd",
+      "RegionSrcBegin",
+      "RegionSrcEnd",
+      "SceneDepth",
+      "SerialNumber",
+      "SrcPointList"
+    ]
+  },
+  "AI": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "AIThermalCalibration": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "BlackBobyTemperature",
+      "CalibrationAreaBegin",
+      "CalibrationAreaEnd",
+      "Emissivity",
+      "Enable",
+      "PointList",
+      "ShowObjectEnable",
+      "TargetSpace"
+    ]
+  },
+  "AIThermalMetrologyTest": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "AreaId",
+      "AreaParamBegin",
+      "AreaParamEnd",
+      "Emissivity",
+      "Enable",
+      "NextAreaParam",
+      "PointList",
+      "TargetSpace",
+      "getSpace"
+    ]
+  },
+  "AIThermalPic": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "User": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "onlineUser": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "UserPassword": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "UserPrivilege": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "user"
+    ],
+    "set_params": []
+  },
+  "privacy": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "appVerification": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "appListBegin",
+      "appListCount",
+      "appListEnd",
+      "appVerificationAction",
+      "next_AppListURL",
+      "number",
+      "remark"
+    ]
+  },
+  "securityEmail": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "securityEmail"
+    ]
+  },
+  "securityQuestion": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "securityAnswer1",
+      "securityAnswer2",
+      "securityAnswer3",
+      "securityQuestion1",
+      "securityQuestion2",
+      "securityQuestion3"
+    ]
+  },
+  "systemLogInfo": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "endTime",
+      "logType",
+      "startTime"
+    ],
+    "set_params": []
+  },
+  "alarmLogInfo": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "endTime",
+      "logType",
+      "startTime"
+    ],
+    "set_params": []
+  },
+  "systemLog": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "logEndTime",
+      "logStartTime",
+      "logType"
+    ],
+    "set_params": []
+  },
+  "eventLog": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "logEndTime",
+      "logStartTime",
+      "logType"
+    ],
+    "set_params": []
+  },
+  "AIMultiObjectDetectAbility": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": []
+  },
+  "AIMultiObjectDetectParam": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "AreaId",
+      "AreaPointBegin",
+      "AreaPointEnd",
+      "FaceEnable",
+      "FaceMinPixelWidth",
+      "FilterStaticEnable",
+      "FirmwareVer",
+      "FtpUploadEnable",
+      "FullBodyEnable",
+      "HumanMinPixelWidth",
+      "PictureOSDEnable",
+      "PictureQuality",
+      "PolygonAreaBegin",
+      "PolygonAreaEnd",
+      "Reliability",
+      "ShowAreaEnable",
+      "ShowObjectMode",
+      "SnapPictureMode",
+      "VehicleEnable",
+      "VehicleMinPixelWidth",
+      "endTime1",
+      "next_weekDayURL",
+      "pointX1",
+      "pointX2",
+      "pointX3",
+      "pointX4",
+      "pointY1",
+      "pointY2",
+      "pointY3",
+      "pointY4",
+      "startTime1",
+      "toEnable",
+      "weekDay",
+      "weekDayBegin",
+      "weekDayEnd"
+    ]
+  },
+  "CGIAlarmTest": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "alarmCenterService": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "CGIAddress",
+      "CGIAlarmFlag",
+      "CGIIVSType",
+      "CGIName",
+      "CGIPasswd1",
+      "CGIPort",
+      "CGIProxyFlag",
+      "CGIType",
+      "CGIUrlEnd",
+      "CGIUrlStart",
+      "CGIUserName1",
+      "aHR0cDovLzE5Mi4xNjguMC4xMTc6NTAyMzQvTWFqb3JBbGFybVR5cGUmTWlub3JBbGFybVR5cGUmU291cmNlTmFtZSZEZXZpY2VJRCZEZXZpY2VJUCZBbGFybVRpbWUmRGVzY3JpcHRpb24",
+      "alarmCenterName",
+      "alarmCenterServerIP",
+      "alarmCenterServerPort",
+      "alarmType",
+      "cgiAlarmEnable",
+      "mFtZSZEZXZpY2VJRCZEZXZpY2VJUCZBbGFybVRpbWUmRGVzY3JpcHRpb24",
+      "platformAccount",
+      "platformPassword",
+      "protocolType",
+      "proxyEnable",
+      "urlEnd",
+      "urlStart"
+    ]
+  },
+  "importConfig": {
+    "endpoint": "network.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "exportConfig": {
+    "endpoint": "network.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "timingRestart": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "autoRestartEnable",
+      "next_weekDayURL",
+      "restartType",
+      "weekBegin",
+      "weekCount",
+      "weekDay",
+      "weekEnd",
+      "weekHour",
+      "weekMinute"
+    ]
+  },
+  "timedRestart": {
+    "endpoint": "system.cgi",
+    "get_params": [],
+    "set_params": [
+      "enable",
+      "interval",
+      "time",
+      "weekday"
+    ]
+  },
+  "sensorMode": {
+    "endpoint": "sensor.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "beginHour",
+      "beginMinute",
+      "cameraID",
+      "endHour",
+      "endMinute",
+      "schemeID",
+      "switchMode"
+    ]
+  },
+  "sensorScheme": {
+    "endpoint": "sensor.cgi",
+    "get_params": [
+      "cameraID",
+      "mode",
+      "schemeID"
+    ],
+    "set_params": [
+      "cameraID",
+      "mode",
+      "schemeID"
+    ]
+  },
+  "imaging": {
+    "endpoint": "sensor.cgi",
+    "get_params": [
+      "cameraID",
+      "schemeID"
+    ],
+    "set_params": [
+      "brightness",
+      "cameraID",
+      "contrast",
+      "saturation",
+      "schemeID",
+      "sharpness"
+    ]
+  },
+  "Defogging": {
+    "endpoint": "sensor.cgi",
+    "get_params": [
+      "SchemaId",
+      "cameraID",
+      "schemeID"
+    ],
+    "set_params": [
+      "SchemaId",
+      "cameraID",
+      "defoggingStrength",
+      "defoggingSwitch"
+    ]
+  },
+  "dayNight": {
+    "endpoint": "sensor.cgi",
+    "get_params": [
+      "cameraID",
+      "schemeID"
+    ],
+    "set_params": [
+      "DTNhour",
+      "DTNmin",
+      "NTDhour",
+      "NTDmin",
+      "cameraID",
+      "dayNightMode",
+      "dayNightSensitivity",
+      "dayToNightThreshold",
+      "dayToNightTime",
+      "delay",
+      "dnMode",
+      "infrared",
+      "infraredIntensity",
+      "lightMode",
+      "nightToDayThreshold",
+      "nightToDayTime",
+      "schemeID",
+      "white",
+      "whiteIntensity"
+    ]
+  },
+  "Exposure": {
+    "endpoint": "sensor.cgi",
+    "get_params": [
+      "cameraID",
+      "schemeID"
+    ],
+    "set_params": [
+      "blueGain",
+      "cameraID",
+      "mode",
+      "redGain",
+      "schemeID"
+    ]
+  },
+  "exposure": {
+    "endpoint": "sensor.cgi",
+    "get_params": [],
+    "set_params": [
+      "cameraID",
+      "exposureMode",
+      "exposureTime"
+    ]
+  },
+  "zoomFocus": {
+    "endpoint": "sensor.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "DNFocusSwitch",
+      "DNenable",
+      "autoFocus",
+      "autoSensitivity",
+      "cameraID",
+      "digitalZoom",
+      "duration",
+      "farFocus",
+      "focusMode",
+      "focusOnce",
+      "focusSensitivity",
+      "focusSwitch",
+      "init",
+      "leastDistance",
+      "leastFocusDistance",
+      "nearFocus",
+      "schemeID",
+      "zoomEnable",
+      "zoomIN",
+      "zoomIn",
+      "zoomOut"
+    ]
+  },
+  "infraredLig": {
+    "endpoint": "sensor.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "infraredLight": {
+    "endpoint": "sensor.cgi",
+    "get_params": [],
+    "set_params": [
+      "brigthnessMode",
+      "cameraID",
+      "far",
+      "middle",
+      "mode",
+      "near"
+    ]
+  },
+  "SceneMode": {
+    "endpoint": "sensor.cgi",
+    "get_params": [
+      "cameraID",
+      "schemeID"
+    ],
+    "set_params": [
+      "CorridorMode",
+      "MirrorMode",
+      "Scene",
+      "cameraID",
+      "schemeID"
+    ]
+  },
+  "WBMode": {
+    "endpoint": "sensor.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "blueGain",
+      "cameraID",
+      "redGain",
+      "wbMode"
+    ]
+  },
+  "ResetParameters": {
+    "endpoint": "sensor.cgi",
+    "get_params": [],
+    "set_params": [
+      "cameraID"
+    ]
+  },
+  "IntelligentTracking": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "calibrate",
+      "cameraID",
+      "duration",
+      "enable",
+      "magnify",
+      "startPointPresetID",
+      "trackType"
+    ]
+  },
+  "NoiseReduction": {
+    "endpoint": "sensor.cgi",
+    "get_params": [
+      "cameraID",
+      "schemeID"
+    ],
+    "set_params": [
+      "2DNR",
+      "2DNRFixedStrength",
+      "2DNRMaxStrength",
+      "2DNRMode",
+      "3DNR",
+      "3DNRFixedStrength",
+      "3DNRMaxStrength",
+      "3DNRMode",
+      "cameraID",
+      "schemeID"
+    ]
+  },
+  "EnhanceImage": {
+    "endpoint": "sensor.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": [
+      "AntiShake",
+      "BLC",
+      "BLCvalue",
+      "Defog",
+      "Defogvalue",
+      "HLC",
+      "HLCvalue",
+      "WDR",
+      "WDRvalue",
+      "cameraID"
+    ]
+  },
+  "falseColor": {
+    "endpoint": "sensor.cgi",
+    "get_params": [
+      "cameraID",
+      "schemeID"
+    ],
+    "set_params": [
+      "cameraID",
+      "falseColorModel",
+      "mixStreamHeightScale",
+      "mixStreamWidthScale",
+      "mixStreamXOffset",
+      "mixStreamYOffset",
+      "schemeID",
+      "temperatureBarEnable"
+    ]
+  },
+  "ffcCtrl": {
+    "endpoint": "sensor.cgi",
+    "get_params": [
+      "cameraID",
+      "schemeID"
+    ],
+    "set_params": [
+      "backgroundAdjustTrigger",
+      "cameraID",
+      "ffcCtrlModel",
+      "ffcIntervalCelsius",
+      "ffcIntervalMinute",
+      "schemeID",
+      "shutterAdjustTrigger"
+    ]
+  },
+  "whiteBalance": {
+    "endpoint": "sensor.cgi",
+    "get_params": [
+      "cameraID",
+      "schemeID"
+    ],
+    "set_params": [
+      "blueGain",
+      "cameraID",
+      "mode",
+      "redGain",
+      "schemeID"
+    ]
+  },
+  "RedBuleLamp": {
+    "endpoint": "sensor.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "RedBlueLamp": {
+    "endpoint": "sensor.cgi",
+    "get_params": [],
+    "set_params": [
+      "RedBlueFlickerDuration",
+      "RedBlueFlickerInterval",
+      "RedBlueLampMode",
+      "RedBlueManualDuration"
+    ]
+  },
+  "sensorParam": {
+    "endpoint": "sensor.cgi",
+    "get_params": [],
+    "set_params": []
+  },
+  "sensorAbility": {
+    "endpoint": "sensor.cgi",
+    "get_params": [
+      "cameraID"
+    ],
+    "set_params": []
+  },
+  "UpdateIPC": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": [
+      "1",
+      "2"
+    ]
+  },
+//   "setNorthPosition": {
+//   "endpoint": "ptz.cgi",
+//   "get_params": [],
+//   "set_params": ["cameraID"],
+//   "notes": "Set the north position of the PTZ. Example: /cgi-bin/ptz.cgi?action=setNorthPosition&cameraID=1"
+// }
+}
