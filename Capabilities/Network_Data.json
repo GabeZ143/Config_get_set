@@ -1,0 +1,36 @@
+{
+  "defaults": {
+    "get": {
+      "enabled": true,
+      "action": "get",
+      "requires_type": true
+    },
+    "set": {
+      "enabled": true,
+      "action": "set",
+      "requires_type": true
+    }
+  },
+  "localNetwork": {
+    "endpoint": "param.cgi",
+    "get_params": [
+      "IPProtoVer",
+      "netCardId"
+    ],
+    "set_params": [
+      "IPAddress",
+      "IPProtoVer",
+      "alternateDNS",
+      "mtu",
+      "netCardId",
+      "preferredDNS",
+      "subGetway",
+      "subNetmask"
+    ]
+  },
+  "deviceInfo": {
+    "endpoint": "param.cgi",
+    "get_params": [],
+    "set_params": []
+  }
+}

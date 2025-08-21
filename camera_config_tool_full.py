@@ -11,6 +11,52 @@ import requests
 from openpyxl import Workbook, load_workbook
 from openpyxl.styles import Font
 
+HELP_TEXT = """
+Camera Config Tool (Wide Excel + Targets)
+
+Required Common Options:
+  --ip IP               Target camera IP or hostname
+  -u USER, --user USER  Camera username
+  -p PASSWORD, --password PASSWORD
+                        Camera password
+  --caps FILE           Path to capabilities JSON (with endpoints + params)
+  --scheme {http,https} Protocol scheme (default: http)
+  --insecure            Ignore TLS certificate validation
+
+Export Options:
+  export                Export configs from camera to Excel
+  -o FILE, --output FILE
+                        Output Excel file (default: export.xlsx)
+  --targets FILE        Excel file containing a "Targets" sheet
+                        Overrides --selectors
+  --selectors STR [STR ...]
+                        Optional CLI selectors, e.g.
+                        AVStream:cameraID=1,streamID=0
+
+Apply Options:
+  apply                 Apply configs from Excel to camera
+  -i FILE, --input FILE Input Excel file (wide format)
+  --allow-unknown-keys  Send keys even if not listed in set_params
+
+Diff Options:
+  diff                  Compare live configs to a template
+  -t FILE, --template FILE
+                        Template Excel file (wide format)
+  --targets FILE        Excel file containing a "Targets" sheet
+  --selectors STR [STR ...]
+                        Optional CLI selectors if no Targets file
+
+Examples:
+  Export using Targets sheet:
+    python camera_config_tool_full.py export --ip 10.0.0.10 -u admin -p secret --caps capabilities.json --targets my_targets.xlsx -o export.xlsx
+
+  Apply configs from Excel:
+    python camera_config_tool_full.py apply --ip 10.0.0.10 -u admin -p secret --caps capabilities.json -i export.xlsx
+
+  Diff live configs vs. baseline:
+    python camera_config_tool_full.py diff --ip 10.0.0.10 -u admin -p secret --caps capabilities.json --targets my_targets.xlsx -t baseline.xlsx
+"""
+
 requests.packages.urllib3.disable_warnings()
 
 def build_url(scheme: str, host: str, path: str) -> str:
@@ -149,9 +195,11 @@ def read_wide(path: str) -> Dict[str, List[Tuple[str,str]]]:
 def export_configs(ip, user, password, scheme, verify_ssl, caps, selectors) -> Dict[str, List[Tuple[str,str]]]:
     data_by_section: Dict[str, List[Tuple[str,str]]] = {}
     defaults = caps.get("defaults", {})
+    del caps["defaults"]
     secmap = caps.get("sections", caps)
-    preferred = ['deviceInfo','deviceName','localNetwork','devicePort','AVStream','OSD','motionAlarm','diskAlarm','perimeterParam','NTP','DDNS','SMTP','User','streamAbility','setNorthPosition']
-    types = preferred + [t for t in sorted(secmap.keys()) if t not in preferred]
+    # preferred = ['deviceInfo','deviceName','localNetwork','devicePort','AVStream','OSD','motionAlarm','diskAlarm','perimeterParam','NTP','DDNS','SMTP','User','streamAbility','setNorthPosition']
+    # types = preferred + [t for t in sorted(secmap.keys()) if t not in preferred]
+    types =  [t for t in sorted(secmap.keys())]
     for t in types:
         entry = secmap.get(t, {})
         endpoint = entry.get('endpoint', 'param.cgi')
@@ -258,7 +306,11 @@ def parse_selectors_cli(sel_list: List[str]) -> Dict[str, List[Dict[str, str]]]:
     return out
 
 def main():
-    ap = argparse.ArgumentParser(description="Camera CGI tool (WIDE + Targets + JSON defaults/overrides).")
+    if len(sys.argv) == 1 or '-h' in sys.argv or '--help' in sys.argv:
+        print(HELP_TEXT)
+        sys.exit(0)
+
+    ap = argparse.ArgumentParser(description="Camera CGI tool (WIDE + Targets + JSON defaults/overrides).", add_help=False)
     sub = ap.add_subparsers(dest='cmd', required=True)
     common = argparse.ArgumentParser(add_help=False)
     common.add_argument('--ip', required=True)
