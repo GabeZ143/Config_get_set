@@ -1,0 +1,65 @@
+{
+  "defaults": {
+    "get": {
+      "enabled": true,
+      "action": "get",
+      "requires_type": true
+    },
+    "set": {
+      "enabled": true,
+      "action": "set",
+      "requires_type": true
+    }
+  },
+    "presetAdd": {
+    "endpoint": "ptz.cgi",
+    "get_params": [],
+    "set_params": ["cameraID", "presetID", "presetName"],
+    "modes": {
+      "get": { "enabled": false },
+      "set": { "enabled": true, "action": "presetAdd", "requires_type": false }
+    },
+    "notes": "Import preset: /cgi-bin/ptz.cgi?action=presetAdd&cameraID=1&presetID=1&presetName=Preset_001"
+  },
+  "temperAlarmParam_set": {
+    "endpoint": "param.cgi",
+    "get_params": ["cameraID"],
+    "set_params": [
+      "cameraID",
+
+      "temperAlarmParamStart",
+      "measureID",
+      "areaId",
+      "areaName",
+      "areaShapeType",
+      "areaFlag",
+
+      "SNPointCoordinateStart",
+      "SNPointCoordinateCount",
+
+      "PointX",               "PointY",
+      "SNPointCoordinateNext",
+      "PointX2",              "PointY2",
+      "SNPointCoordinateNext2",
+      "PointX3",              "PointY3",
+      "SNPointCoordinateNext3",
+      "PointX4",              "PointY4",
+      "SNPointCoordinateEnd",
+
+      "alarmType",
+      "warningValue",
+      "alarmValue",
+      "timeDuration",
+      "emissivity",
+      "reflectTempEnable",
+      "reflectTempValue",
+
+      "temperAlarmParamEnd"
+    ],
+     "modes": {
+      "get":  { "enabled": true,  "action": "get", "requires_type": true, "type_value": "temperAlarmParam" },
+      "set":  { "enabled": true,  "action": "set", "requires_type": true, "type_value": "temperAlarmParam" }
+    },
+    "notes": "Define a thermal area (rectangle example with 4 points). Build the URL as /cgi-bin/param.cgi?action=set&type=temperAlarmParam&cameraID=1&temperAlarmParamStart=1&measureID=0&areaId=1&areaName=Area1&areaShapeType=4&areaFlag=true&SNPointCoordinateStart=1&SNPointCoordinateCount=4&PointX=<x1>&PointY=<y1>&SNPointCoordinateNext=2&PointX2=<x2>&PointY2=<y2>&SNPointCoordinateNext2=3&PointX3=<x3>&PointY3=<y3>&SNPointCoordinateNext3=4&PointX4=<x4>&PointY4=<y4>&SNPointCoordinateEnd=1&alarmType=2&warningValue=48.0&alarmValue=51.0&timeDuration=1&emissivity=0.92&reflectTempEnable=false&reflectTempValue=0.0&temperAlarmParamEnd=1"
+  }
+}

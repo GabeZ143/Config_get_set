@@ -1,0 +1,71 @@
+{
+  "ptzCap": {
+    "endpoint": "ptz.cgi",
+    "get_params": ["action", "type", "cameraID"],
+    "set_params": [],
+    "modes": { "get": { "enabled": true }, "set": { "enabled": false } },
+    "notes": "GET /cgi-bin/ptz.cgi?action=get&type=ptzCap&cameraID=1"
+  },
+
+  "presetAdd": {
+    "endpoint": "ptz.cgi",
+    "get_params": [],
+    "set_params": ["cameraID", "presetID", "presetName"],
+    "modes": { "set": { "enabled": true, "action": "presetAdd", "requires_type": false } }
+  },
+  "listPreset": {
+    "endpoint": "ptz.cgi",
+    "get_params": ["cameraID"],
+    "set_params": [],
+    "modes": { "get": { "enabled": true, "action": "listPreset", "requires_type": false } }
+  },
+  "presetDelete": {
+    "endpoint": "ptz.cgi",
+    "get_params": [],
+    "set_params": ["cameraID", "presetID"],
+    "modes": { "set": { "enabled": true, "action": "presetDelete", "requires_type": false } }
+  },
+
+  "tourAddBegin": {
+    "endpoint": "ptz.cgi",
+    "get_params": [],
+    "set_params": ["cameraID", "tourID"],
+    "modes": { "set": { "enabled": true, "action": "tourAddBegin", "requires_type": false } }
+  },
+  "tourAddPreset": {
+    "endpoint": "ptz.cgi",
+    "get_params": [],
+    "set_params": ["cameraID", "presetID", "time", "speed"],
+    "modes": { "set": { "enabled": true, "action": "tourAddPreset", "requires_type": false } }
+  },
+  "tourAddEnd": {
+    "endpoint": "ptz.cgi",
+    "get_params": [],
+    "set_params": ["cameraID", "tourID", "tourName"],
+    "modes": { "set": { "enabled": true, "action": "tourAddEnd", "requires_type": false } }
+  },
+  "tourRun": {
+    "endpoint": "ptz.cgi",
+    "get_params": [],
+    "set_params": ["cameraID", "tourID"],
+    "modes": { "set": { "enabled": true, "action": "tourRun", "requires_type": false } }
+  },
+  "tourStop": {
+    "endpoint": "ptz.cgi",
+    "get_params": [],
+    "set_params": ["cameraID", "tourID"],
+    "modes": { "set": { "enabled": true, "action": "tourStop", "requires_type": false } }
+  },
+  "listTour": {
+    "endpoint": "ptz.cgi",
+    "get_params": ["cameraID"],
+    "set_params": [],
+    "modes": { "get": { "enabled": true, "action": "listTour", "requires_type": false } }
+  },
+  "tourDelete": {
+    "endpoint": "ptz.cgi",
+    "get_params": [],
+    "set_params": ["cameraID", "tourID"],
+    "modes": { "set": { "enabled": true, "action": "tourDelete", "requires_type": false } }
+  }
+}

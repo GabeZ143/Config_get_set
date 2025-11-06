@@ -235,36 +235,63 @@ def apply_configs(data_by_section: Dict[str, List[Tuple[str,str]]], ip, user, pa
     report = {'applied': [], 'skipped': []}
     defaults = caps.get("defaults", {})
     secmap = caps.get("sections", caps)
+
+    def _emit(url, payload, section):
+        if not payload:
+            return
+        try:
+            resp = http_get(url, auth_params(user, password, payload), verify_ssl)
+            report['applied'].append({
+                'section': section,
+                'keys': [k for (k, _) in payload if k not in ('action', 'type')],
+                'response': resp[:200]
+            })
+        except Exception as e:
+            report['skipped'].append({
+                'section': section,
+                'reason': f"set failed: {e}",
+                'keys': [k for (k, _) in payload]
+            })
+
     for section, pairs in data_by_section.items():
         entry = secmap.get(section, {})
         endpoint = entry.get('endpoint', 'param.cgi')
         allowed = set(entry.get('set_params', []))
         modes = entry.get('modes', {})
         mset = resolve_mode(defaults, modes, "set")
+
         if not mset.get("enabled", True):
             report['skipped'].append({'section': section, 'reason': 'set disabled by capabilities'})
             continue
-        payload = [('action', mset.get('action', 'set'))]
+
+        base = [('action', mset.get('action', 'set'))]
         if mset.get("requires_type", True):
-            payload.append(('type', section))
-        unknown = []
-        for k,v in pairs:
+            base.append(('type', section))
+        url = build_url(scheme, ip, f'/cgi-bin/{endpoint}')
+
+        # ---- simplified blank-line chunking ----
+        current = list(base)
+        for k, v in pairs:
+            # blank line = send current item
+            if (not k or not str(k).strip()) and (not v or not str(v).strip()):
+                if len(current) > len(base):
+                    _emit(url, current, section)
+                    current = list(base)
+                continue
+
             ku = (k or '').upper()
             if ku in ('', 'SECTION', '#ERROR'):
                 continue
+
             if (k in allowed) or allow_unknown:
-                payload.append((k, v))
+                current.append((k, v))
             else:
-                unknown.append(k)
-        if unknown and not allow_unknown:
-            report['skipped'].append({'section': section, 'reason': 'non-settable keys', 'keys': unknown})
-        if len(payload) > (1 if not mset.get("requires_type", True) else 2):
-            try:
-                url = build_url(scheme, ip, f'/cgi-bin/{endpoint}')
-                resp = http_get(url, auth_params(user, password, payload), verify_ssl)
-                report['applied'].append({'section': section, 'keys':[k for (k,_) in payload if k not in ('action','type')], 'response': resp[:200]})
-            except Exception as e:
-                report['skipped'].append({'section': section, 'reason': f"set failed: {e}", 'keys':[k for (k,_) in payload]})
+                report['skipped'].append({'section': section, 'reason': 'non-settable key', 'keys': [k]})
+
+        # Emit the last item (no trailing blank)
+        if len(current) > len(base):
+            _emit(url, current, section)
+
     return report
 
 def struct_from_wide(data_by_section: Dict[str, List[Tuple[str,str]]]) -> Dict[str, Dict[str,str]]:

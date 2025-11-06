@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "get": { "enabled": true, "action": "get", "requires_type": true },
+    "set": { "enabled": true, "action": "set", "requires_type": true }
+  },
+  "sections": {
+    "SMTP": {
+      "endpoint": "param.cgi",
+      "get_params": [],
+      "set_params": [
+        "serverAddr",
+        "serverPort",
+        "SMTPUserName",
+        "SMTPPassword",
+        "anonymousSendEnable",
+        "senderEmailAddress",
+        "transportMode",
+        "attachmentImageQuality",
+        "recipientEmailAddress1",
+        "recipientEmailAddress2",
+        "recipientEmailAddress3",
+        "recipientEmailAddress4",
+        "recipientEmailAddress5",
+        "sendInterval",
+        "ImageInterval",
+        "ImageNum"
+      ]
+    }
+  }
+}
