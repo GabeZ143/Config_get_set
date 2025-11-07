@@ -1,0 +1,20 @@
+{
+  "defaults": {
+    "get": { "enabled": true, "action": "get", "requires_type": true },
+    "set": { "enabled": true, "action": "set", "requires_type": true }
+  },
+  "sections": {
+    "NTP": {
+      "endpoint": "param.cgi",
+      "get_params": [],
+      "set_params": [
+        "IPProtoVer",
+        "enableFlag",
+        "NTPIP",
+        "NTPPort",
+        "NTPCheckTimeUnit",
+        "NTPCheckTime"
+      ]
+    }
+  }
+}
