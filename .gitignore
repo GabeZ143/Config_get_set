@@ -1,4 +1,4 @@
-*.xlsx
+Test/
 debug*
 oldpyscript/
 Exports/
